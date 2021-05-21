@@ -10,6 +10,7 @@
     "analyzer": "cross-env use_analyzer=true npm run build"
   },
   "dependencies": {
+    "clipboard": "^2.0.8",
     "core-js": "^3.6.5",
     "element-ui": "^2.15.1",
     "vue": "^2.6.11",

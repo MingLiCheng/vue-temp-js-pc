@@ -10,7 +10,7 @@ const config = {
     spaMode: true,
 
     // 部署的输出函数为{'JAVA, 'NODE'}
-    buildEnv: 'NODE',
+    buildEnv: 'JAVA',
 
     // 入口文件
     entry: function () {
@@ -35,10 +35,10 @@ const config = {
     // 静态资源文件夹
     assetsSubDirectory: 'assets',
     // 发布的 Paths
-    assetsPublicPath: '/mlcheng/',
+    assetsPublicPath: '/temp/',
     // 试图输出总目录
     viewOutputRoot: function () {
-      return this.spaMode ? '' : ''
+      return this.spaMode ? '' : 'views/'
     }
   },
   build: {
@@ -50,7 +50,7 @@ const config = {
     assetsPublicPath: '/module-collection/',
     // 试图输出总目录
     viewOutputRoot: function () {
-      return this.buildEnv === 'JAVA' ? 'WEB-INF/views/' : this.spaMode ? '' : ''
+      return this.buildEnv === 'JAVA' ? 'WEB-INF/views/' : this.spaMode ? '' : 'views/'
     }
   }
 }
